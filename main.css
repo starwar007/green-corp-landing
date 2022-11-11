@@ -226,7 +226,7 @@ body {
 .features__border{
   margin: 50px 0;
   border: 1px solid  #E6EAF4;
-  grid-column: 1/4;
+  /* grid-column: 1/4; */
 }
 .features__feedback {
   display: flex;
@@ -250,7 +250,6 @@ body {
   padding: 30px 40px 25px 40px;
   border-radius: 25px;
   color: white;
-  /* width: 205px; */
   height: 50%;
 }
 .features__box  h3 {
@@ -262,8 +261,7 @@ body {
   background-color:#dc5e26 ;
   box-shadow: 0px 6px 0 rgb(221 95 38 / 20%);
   margin-right: 30px;
-  height: 150;
-}
+  }
 .features__rate-box {
   background-color: #1D263A;
   box-shadow: 0px 6px 0 rgb(29 38 58 / 20%);
@@ -280,8 +278,7 @@ body {
 }
 .promo {
  display: flex;
- flex-direction: row;
- height: 600px;
+ 
 }
 .promo__right {
   width: 50%;
@@ -292,11 +289,13 @@ body {
   background-color: white;
   padding: 30px 40px ;
   border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
 }
 .nested__map p {
-  font-size: 20px;
-  line-height: 22px;
-  opacity: 80%;
+  opacity: 0.8;
+
 }
 .nested__map p::before{
   content: '';
@@ -307,12 +306,14 @@ body {
   margin-right :10px;
   display: inline-block;
 }
-.circle {
-  width: 10px; 
-  height: 10px;
-  background: #ec6b29;
-  border-radius: 50%;
-  margin-right :10px; 
+.nested__map button i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+  .button{
+    display: flex;
+    justify-content: center;
   }
   .button__incard {
     background-color: #107b1c;
@@ -320,6 +321,7 @@ body {
     margin-top: 20px;
     padding: 15px 30px;
     font-weight: 600;
+    box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
   }
 
       /* Планшеты */
@@ -394,41 +396,45 @@ body {
     padding: 50px 10px;
   }
   .cards {
-    /* display: grid; */
-    grid-template-columns: auto;
-    /* height: 305px; */
-    /* grid-gap: 50px; */
-  }
+     grid-template-columns: auto;
+      }
   .features__feedback {
     flex-direction: column;
   }
   .features__feedback-left{
     margin-right: 0px;
   }
-  .features__feedback-left h2 {
-    font-size: 36px;
-    margin: 10px 0px;
-  }
-  .features__feedback-right {
-    flex-direction: column;
-    align-items: initial;
-    flex-wrap: wrap;
-  }
-  .features__box  h3 {
-     font-size: 36px;
-  }
-  .features__savings-box {
-    margin-right: 0px;
-    margin-bottom: 30px;
-  }
+    .featuresfeed__back-left h2,
+    .features__box h3 {
+      font-size: 36px;
+    }
+  
+    .features__feedback-right {
+      flex-direction: column;
+      align-items: initial;
+    }
+  
+    .features__savings-box {
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
   /* Блок с изображением и кнопкой для мобилок */
   .promo__image{
     width: 100%;
     height: 500px;
-    order: 1
+    /* order: 1 */
   }
   .promo {
-   display: flex;
-   flex-direction: column;
+   /* display: flex; */
+   flex-direction : column-reverse;
    }
+   .promo__right {
+      padding: 50px 10px;
+      width: auto;}
+   .nested__map {
+      /* margin: 10px; */
+      width: 90%; }
+      .nested__map {
+        width: auto;
+      }
 }
