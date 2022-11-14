@@ -197,6 +197,7 @@ body {
   padding: 35px 40px 25px 40px;
   border: 1px solid  #D9E4E6;
   border-radius: 5px;
+  background: #FFFFFF;
 }
 .card p {
     font-size: 16px;
@@ -224,9 +225,10 @@ body {
   color:#22a030 ;
 }
 .features__border{
-  margin: 50px 0;
-  border: 1px solid  #E6EAF4;
-  /* grid-column: 1/4; */
+  width: 100%;
+  border: 1px solid #E6EAF4;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .features__feedback {
   display: flex;
@@ -250,7 +252,7 @@ body {
   padding: 30px 40px 25px 40px;
   border-radius: 25px;
   color: white;
-  height: 50%;
+  height: 65%;
 }
 .features__box  h3 {
   margin-top: 0px;
@@ -275,13 +277,13 @@ body {
   flex-shrink: 0;
   background-size:  cover;
   background-image: url('img/promo.jpg');
+  background-position: center;
 }
 .promo {
  display: flex;
  
 }
 .promo__right {
-  width: 50%;
   background-color: #dd5f26 ;
   padding: 160px 60px ;
 }
@@ -392,11 +394,12 @@ body {
   .footer__container {
       flex-direction: column;
   }
+  /* Создание блока с преимуществами для мобилок */
   .features {
-    padding: 50px 10px;
+    padding: 115px 60px; 
   }
   .cards {
-     grid-template-columns: auto;
+    grid-template-columns: auto;
       }
   .features__feedback {
     flex-direction: column;
@@ -422,19 +425,14 @@ body {
   .promo__image{
     width: 100%;
     height: 500px;
-    /* order: 1 */
-  }
+    }
   .promo {
-   /* display: flex; */
-   flex-direction : column-reverse;
+    flex-direction : column-reverse;
    }
    .promo__right {
       padding: 50px 10px;
-      width: auto;}
+    }
    .nested__map {
-      /* margin: 10px; */
-      width: 90%; }
-      .nested__map {
-        width: auto;
+       width: auto;
       }
 }
