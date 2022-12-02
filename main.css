@@ -61,6 +61,7 @@ body {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
   }
   .about h1 {
     font-size: 70px;
@@ -325,7 +326,14 @@ body {
     font-weight: 600;
     box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
   }
-
+  /* Проектное задание 7.2 анимация  */
+  .orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  
       /* Планшеты */
 @media (max-width: 1024px) {
   .about {
