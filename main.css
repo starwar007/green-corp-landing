@@ -11,12 +11,19 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: box-shadow, background-color .25s ease;
     z-index: 1;
     top: 0;
-    background-color:white;
+    background: none;
+}
+  .header__scrolled {
+    background-color: white;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101/10%)
   }
-   
+
   .header__logo {
     height: 30px;
   }
@@ -57,11 +64,12 @@ body {
     align-items: center;
     justify-content: space-around;
     padding-bottom: 115px;
-    padding-top: 115px;
+    padding-top: 200px;
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
+    height: 100%;
   }
   .about h1 {
     font-size: 70px;
@@ -253,7 +261,7 @@ body {
   padding: 30px 40px 25px 40px;
   border-radius: 25px;
   color: white;
-  height: 65%;
+  /* height: 60%; */
 }
 .features__box  h3 {
   margin-top: 0px;
